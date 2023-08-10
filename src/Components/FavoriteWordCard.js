@@ -1,0 +1,182 @@
+import React from "react";
+import { useState, useEffect } from "react";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import Col from "react-bootstrap/Col";
+import Row from "react-bootstrap/Row";
+import QuickEditFavoriteWords from "./FavoriteWordModal";
+import { GiFleurDeLys } from "react-icons/gi";
+
+const FavoriteWordCard = (props) => {
+  const navigate = useNavigate();
+
+  const { favoriteWordEntry, urlEndPoint, setShouldRefresh, favoriteWordList } =
+    props;
+  console.log(favoriteWordEntry);
+
+  const handleDeleteFavoriteWord = (id) => {
+    setShouldRefresh(true);
+
+    axios
+      .delete(`${urlEndPoint}/favoritewords/delete-one/${id}`)
+
+      .then(
+        function (response) {
+          console.log(response);
+          setShouldRefresh(false);
+        },
+        {
+          "Content-Type": "application/json",
+        }
+      );
+  };
+
+  return (
+    <div className="wordCard">
+      {["Dark"].map((variant) => (
+        <Row xs={1} md={2} className="g-4">
+          {Array.from({ length: 1 }).map((_, idx) => (
+            <Col>
+              <Card
+                border="primary"
+                bg={variant.toLowerCase()}
+                key={variant}
+                text={variant.toLowerCase() === "light" ? "dark" : "blue"}
+                style={{ width: "27rem" }}
+                className="mb-2"
+              >
+                <Card.Header style={{ color: "goldenrod" }}>
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                  <GiFleurDeLys />
+                </Card.Header>
+                <Card.Body>
+                  <QuickEditFavoriteWords
+                    favoriteWordEntry={favoriteWordEntry}
+                    favoriteWordList={favoriteWordList}
+                    setShouldRefresh={setShouldRefresh}
+                    urlEndPoint={urlEndPoint}
+                  />
+                  <br />
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Part Of Speech:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.partOfSpeech} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Translation:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.translation} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Example Sentence:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.exampleSentence} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Created By:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.createdBy} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Comments:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.comments} </small>{" "}
+                  </Card.Text>
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Created On:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.createdAt} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Created By Id:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.createdById} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Subtitle style={{ fontSize: "25px", fontWeight: 1000 }}>
+                    {" "}
+                    Last Updated By Id:{" "}
+                  </Card.Subtitle>
+                  <Card.Text>
+                    {" "}
+                    <small> {favoriteWordEntry.lastUpdatedById} </small>{" "}
+                  </Card.Text>
+
+                  <Card.Footer>
+                    <Card.Subtitle
+                      style={{ fontSize: "25px", fontWeight: 1000 }}
+                    >
+                      {" "}
+                      Last Modified:{" "}
+                    </Card.Subtitle>
+                    <small className="text-muted">
+                      <p>{favoriteWordEntry.lastModified}</p>{" "}
+                    </small>
+                  </Card.Footer>
+
+                  <div className="d-grid gap-2">
+                    <Button
+                      variant="danger"
+                      onClick={() => {
+                        handleDeleteFavoriteWord(favoriteWordEntry.createdById);
+                      }}
+                    >
+                      Delete Word
+                    </Button>
+                  </div>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      ))}
+    </div>
+  );
+};
+
+export default FavoriteWordCard;

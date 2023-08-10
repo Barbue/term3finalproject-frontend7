@@ -1,0 +1,241 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: goldenrod;
+  background-image: url('https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExejN5aXNtZTFpNHZ6eXpvdHJvZ3N5Ym95NTduaDBwdTVoMWtpdnM1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/m9R3rPzyocKpZVwWnk/giphy.gif');
+}
+/* https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExejN5aXNtZTFpNHZ6eXpvdHJvZ3N5Ym95NTduaDBwdTVoMWtpdnM1MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/m9R3rPzyocKpZVwWnk/giphy.gif */
+
+/* '/src/acadia.gif' */
+
+/* http://gifgifs.com/animations/geography-history/international-flags/acadia.gif */
+
+
+
+/* .App-link {
+  color: #61dafb;
+} */
+
+/* .navbar2{
+  color: white;
+} */
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+h1 {
+font-style: italic;
+/* text-decoration: underline; */
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.cardlink{
+
+  color: blue;
+ font-weight: 1000;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
+
+}
+
+.header1{
+  margin-top: 3%;
+}
+.header2{
+  margin-bottom: 5%;
+}
+
+h2 {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+label {
+  font-family: monospace;
+  font-weight: 1000;
+ 
+}
+
+ p {
+  color: red;
+  font-weight: 700;
+  font-size: 90%; 
+} 
+
+h1{
+   text-align: center;
+}
+
+.bsbutton1{
+ text-align: right;
+
+}
+.bsbutton2{
+  position: relative;
+
+} 
+
+.pages{
+  text-align: center;
+  
+}
+
+.pages2{
+  text-align: center;
+}
+
+/* .pagesButton{
+  color: black !important;
+  border-color: blue;
+} */
+
+.wordsTitle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.expressionsTitle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.verbsTitle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+
+.favoriteWordsTitle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  
+}
+
+.mb-2{
+  margin-top: 1%;
+  
+}
+
+.wordCard{
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+} 
+
+.expressionCard{
+  
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+} 
+
+.verbCard{
+  
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+} 
+
+.navLink1{
+  color: goldenrod !important;
+  font-size: x-small !important;
+
+}
+.modal{
+  color: goldenrod;
+  
+}
+
+.modalBody{
+  background-color:  black ;
+}
+
+.modalHeader{
+  background-color: rgb(174, 14, 14);
+}
+
+.modalFooter{
+  background-color: rgb(174, 14, 14)!important;
+}
+
+
+.navbarBrand{
+
+  color: goldenrod !important;
+
+} 
+
+
+/* rgb(174, 14, 14) */
+
+/* rgb(40, 38, 38) */
+
+/* .bsbutton1favwords{
+
+  margin-left: 67px;
+  
+
+} */
+.searchFormFavWords{
+
+  margin-left: 66px;
+  margin-right: 66px;
+
+
+} 
+
+.favoriteVerbsTitle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  
+}
+.favoriteExpressionsTitle{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  font-size: 169%;
+}
+ /* .switchBarFont{
+
+  /* font-size: larger; */
+ 
+  
+
+
+
