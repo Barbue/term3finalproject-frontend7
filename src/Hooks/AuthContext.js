@@ -19,6 +19,7 @@ const AuthProvider = ({ children }) => {
 		const responseFetch = async () => {
 			const userToken = await getUserToken();
 			let verifiedUser = {success:false}
+			console.log(userToken)
 			if (userToken) {  
 				verifiedUser = await verifyUser(userToken); }
 
