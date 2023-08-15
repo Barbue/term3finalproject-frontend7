@@ -241,7 +241,7 @@ h1{
   @media (max-width: 428px) {
 
     .navLink1{ 
-      width: 10% !important
+      font-size: xx-small !important;
 
 
     }
