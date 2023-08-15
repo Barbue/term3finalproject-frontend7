@@ -236,14 +236,17 @@ h1{
   /* font-size: larger; */
  
 
-  .column {
-    width: 100%;
-  }
   
-  @media (min-width: 600px) {
-    .column {
-      width: 50%;
+  
+  @media (max-width: 428px) {
+    body {
+
+      width: 50%
+
+
     }
+      
+    
   }
   
   
