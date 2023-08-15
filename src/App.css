@@ -240,10 +240,17 @@ h1{
   
   @media (max-width: 428px) {
 
-    .navLink1{ 
+    /* .navLink1{ 
       font-size: 20% !important;
 
 
+    } */
+
+    .header1{
+      font-size: small;
+    }
+    .header2{
+      font-size: small;
     }
    
 
