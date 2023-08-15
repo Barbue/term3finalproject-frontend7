@@ -239,13 +239,20 @@ h1{
   
   
   @media (max-width: 428px) {
-    body {
 
-      width: 50%
+    .navLink1{ 
+      width: 75%
 
 
     }
-      
+   
+
+
+
+
+
+
+
     
   }
   
