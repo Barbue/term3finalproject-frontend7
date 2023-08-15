@@ -268,9 +268,10 @@ h1{
      }
      .bsbutton2{
       display: flex;
-      flex-direction: row;
+      flex-direction:center;
       align-items: center;
       justify-content: center;
+      padding-top: 2px;
       
      
      } 
