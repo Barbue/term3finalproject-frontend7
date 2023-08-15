@@ -45,7 +45,7 @@ return (
         <Form.Label htmlFor="search"><VscSearch/>Search: </Form.Label>
         <Form.Control  type="text" id="search" name="search" value={input} onChange={(e) => { setInput(e.target.value) }} />
         </FormGroup>  
-        <Form.Check
+        <Form.Check className="toggle"
             inline
             label="Verb"
             id="custom-switch"
@@ -54,7 +54,7 @@ return (
             checked={field === "verb"}
             onChange={e => setField(e.target.value)}
             /> 
-            <Form.Check
+            <Form.Check className="toggle"
             inline
             label="Tense"
             id="custom-switch"
@@ -64,7 +64,7 @@ return (
             onChange={e => setField(e.target.value)}
             /> 
             
-            <Form.Check
+            <Form.Check className="toggle"
             inline
             label="Created By"
             id="custom-switch"
@@ -73,7 +73,7 @@ return (
             checked={field === "createdBy"}
             onChange={e => setField(e.target.value)}
             /> 
-        <Button   variant="primary" size="sm" type="submit">
+        <Button  className='bsbutton1' variant="primary" size="sm" type="submit">
             Search
         </Button> {"  "}
        
