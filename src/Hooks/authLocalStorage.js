@@ -1,10 +1,12 @@
 const tokenHeaderKey = process.env.REACT_APP_TOKEN_HEADER_KEY;
 
 const setUserToken = (token) => {
-	localStorage.setItem(tokenHeaderKey, JSON.stringify(token));
+	localStorage.setItem(tokenHeaderKey, token); //JSON.stringify(token)
 };
 const getUserToken = () => {
-	return JSON.parse(localStorage.getItem(tokenHeaderKey));
+	let token = localStorage.getItem(tokenHeaderKey);
+	console.log(token)
+	return token
 };
 const removeUserToken = () => {
 	localStorage.removeItem(tokenHeaderKey);
