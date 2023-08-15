@@ -18,9 +18,9 @@ const loginUser = async (userData) => {
 const verifyUser = async (token) => {
 	try {
 		const response = await axios.get(`${url}/users/verify-user`, {
-			headers: {
+			
 				[process.env.REACT_APP_TOKEN_HEADER_KEY]: token,
-			},
+			
 		});
 		return response.data;
 	} catch (error) {
