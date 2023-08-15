@@ -1,9 +1,6 @@
 import { createContext, useContext, useState, useMemo, useEffect } from "react";
 import { loginUser, verifyUser } from "./authUtils";
-import {
-	setUserToken,
-	getUserToken,
-	removeUserToken,
+import { setUserToken,getUserToken,removeUserToken,
 } from "./authLocalStorage";
 
 const AuthContext = createContext();
