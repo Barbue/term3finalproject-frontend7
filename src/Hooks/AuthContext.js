@@ -17,7 +17,8 @@ const AuthProvider = ({ children }) => {
 
 	useEffect(() => {
 		const responseFetch = async () => {
-			const verifiedUser = await verifyUser(user);
+			const userToken = await getUserToken();
+			const verifiedUser = await verifyUser(userToken); //user
 			console.log(verifiedUser)
 			if (verifiedUser.success) {
 				setIsVerified(true);
