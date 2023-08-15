@@ -17,7 +17,7 @@ const loginUser = async (userData) => {
 };
 const verifyUser = async (token) => {
 	try {
-		const response = await axios.post(`${url}/users/verify-user`, token);
+		const response = await axios.post(`${url}/users/verify-user`, {token: token} );
 		return response.data;
 	} catch (error) {
 		return error;
