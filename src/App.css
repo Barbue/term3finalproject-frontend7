@@ -247,12 +247,15 @@ h1{
     } */
 
     .header1{
-      font-size: small;
+      font-size: medium;
     }
     .header2{
-      font-size: small;
+      font-size: medium;
     }
-   
+     
+    .switchBarFont{
+      width: 80%;
+    }
 
 
 
