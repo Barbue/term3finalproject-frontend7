@@ -1,5 +1,5 @@
 import axios from "axios";
-const url = "lexiqueacadien.com/api";
+const url = "/api";
 
 //const url = "http://localhost:5001/api";
 
