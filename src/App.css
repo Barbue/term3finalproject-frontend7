@@ -257,23 +257,16 @@ h1{
       flex-direction: column;
       align-items: center;
       justify-content: center;
+    }
+
+    /* .toggle{
+
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-    }
 
-    .toggle{
-
-      display: flex;
-      flex-direction: column;
-      align-items:flex-start;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-
-    }
+    } */
 
 
 
