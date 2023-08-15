@@ -17,7 +17,7 @@ const loginUser = async (userData) => {
 };
 const verifyUser = async (token) => {
 	try {
-		const response = await axios.get(`${url}/users/verify-user`, {
+		const response = await axios.post(`${url}/users/verify-user`, {
 			
 				[process.env.REACT_APP_TOKEN_HEADER_KEY]: token,
 			
