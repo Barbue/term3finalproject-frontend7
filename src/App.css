@@ -254,6 +254,7 @@ h1{
     }
      
     .switchBarFont{
+      width: auto;
       display: flex;
   flex-direction: column;
   align-items: center;
