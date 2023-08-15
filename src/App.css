@@ -261,17 +261,17 @@ h1{
     
     .bsbutton1{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
-      column-gap: 2px;
+      
      }
      .bsbutton2{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
       justify-content: center;
-      column-gap: 2px;
+      
      
      } 
     
