@@ -14,14 +14,14 @@ function QuickEdit(props) {
 
   const { wordList, urlEndPoint, setShouldRefresh, wordEntry } = props;
 
-  const [word, setWord] = useState(""); //wordEntry.word
-  const [partOfSpeech, setPartOfSpeech] = useState(""); //wordEntry.partOfSpeech
-  const [translation, setTranslation] = useState(""); //wordEntry.translation
-  const [exampleSentence, setExampleSentence] = useState(""
+  const [word, setWord] = useState(); //wordEntry.word
+  const [partOfSpeech, setPartOfSpeech] = useState(); //wordEntry.partOfSpeech
+  const [translation, setTranslation] = useState(); //wordEntry.translation
+  const [exampleSentence, setExampleSentence] = useState(
     
   ); //wordEntry.exampleSentence
-  const [createdBy, setCreatedBy] = useState(""); //wordEntry.createdBy
-  const [comments, setComments] = useState(""); //wordEntry.comments
+  const [createdBy, setCreatedBy] = useState(); //wordEntry.createdBy
+  const [comments, setComments] = useState(); //wordEntry.comments
 
   const navigate = useNavigate();
 
