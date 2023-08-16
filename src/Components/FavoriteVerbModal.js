@@ -15,16 +15,16 @@ function QuickEditFavoriteVerbs(props) {
   const { favoriteVerbList, urlEndPoint, setShouldRefresh, favoriteVerbEntry } =
     props;
 
-  const [verb, setVerb] = useState(favoriteVerbEntry.verb);
-  const [tense, setTense] = useState(favoriteVerbEntry.tense);
-  const [je, setJe] = useState(favoriteVerbEntry.je);
-  const [tu, setTu] = useState(favoriteVerbEntry.tu);
-  const [il, setIl] = useState(favoriteVerbEntry.il);
-  const [nous, setNous] = useState(favoriteVerbEntry.nous);
-  const [vous, setVous] = useState(favoriteVerbEntry.vous);
-  const [ils, setIls] = useState(favoriteVerbEntry.ils);
-  const [createdBy, setCreatedBy] = useState(favoriteVerbEntry.createdBy);
-  const [comments, setComments] = useState(favoriteVerbEntry.comments);
+  const [verb, setVerb] = useState(); //favoriteVerbEntry.verb
+  const [tense, setTense] = useState(); //favoriteVerbEntry.tense
+  const [je, setJe] = useState(); //favoriteVerbEntry.je
+  const [tu, setTu] = useState(); //favoriteVerbEntry.tu
+  const [il, setIl] = useState(); //favoriteVerbEntry.il
+  const [nous, setNous] = useState(); //favoriteVerbEntry.nous
+  const [vous, setVous] = useState(); //favoriteVerbEntry.vous
+  const [ils, setIls] = useState(); //favoriteVerbEntry.ils
+  const [createdBy, setCreatedBy] = useState(); //favoriteVerbEntry.createdBy
+  const [comments, setComments] = useState(); //favoriteVerbEntry.comments
 
   const navigate = useNavigate();
 

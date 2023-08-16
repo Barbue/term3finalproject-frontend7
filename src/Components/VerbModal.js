@@ -14,16 +14,16 @@ function QuickEditVerb(props) {
 
   const { verbList, urlEndPoint, setShouldRefresh, verbEntry } = props;
 
-  const [verb, setVerb] = useState(verbEntry.verb);
-  const [tense, setTense] = useState(verbEntry.tense);
-  const [je, setJe] = useState(verbEntry.je);
-  const [tu, setTu] = useState(verbEntry.tu);
-  const [il, setIl] = useState(verbEntry.il);
-  const [nous, setNous] = useState(verbEntry.nous);
-  const [vous, setVous] = useState(verbEntry.vous);
-  const [ils, setIls] = useState(verbEntry.ils);
-  const [createdBy, setCreatedBy] = useState(verbEntry.createdBy);
-  const [comments, setComments] = useState(verbEntry.comments);
+  const [verb, setVerb] = useState(); //verbEntry.verb
+  const [tense, setTense] = useState(); //verbEntry.tense
+  const [je, setJe] = useState(); //verbEntry.je
+  const [tu, setTu] = useState();  //verbEntry.tu
+  const [il, setIl] = useState(); //verbEntry.il
+  const [nous, setNous] = useState(); //verbEntry.nous
+  const [vous, setVous] = useState(); //verbEntry.vous
+  const [ils, setIls] = useState(); //verbEntry.ils
+  const [createdBy, setCreatedBy] = useState();  //verbEntry.createdBy
+  const [comments, setComments] = useState(); //verbEntry.comments
 
   const navigate = useNavigate();
 

@@ -19,18 +19,12 @@ function QuickEditExpFavorite(props) {
     favoriteExpressionEntry,
   } = props;
 
-  const [theme, setTheme] = useState(favoriteExpressionEntry.theme);
-  const [expression, setExpression] = useState(
-    favoriteExpressionEntry.expression
-  );
-  const [literaltranslation, setLiteralTranslation] = useState(
-    favoriteExpressionEntry.literaltranslation
-  );
-  const [metaphoricaltranslation, setMetaphoricalTranslation] = useState(
-    favoriteExpressionEntry.metaphoricaltranslation
-  );
-  const [createdBy, setCreatedBy] = useState(favoriteExpressionEntry.createdBy);
-  const [context, setContext] = useState(favoriteExpressionEntry.context);
+  const [theme, setTheme] = useState(); //favoriteExpressionEntry.theme
+  const [expression, setExpression] = useState(); //favoriteExpressionEntry.expression
+  const [literaltranslation, setLiteralTranslation] = useState(); //favoriteExpressionEntry.literaltranslation
+  const [metaphoricaltranslation, setMetaphoricalTranslation] = useState(); //favoriteExpressionEntry.metaphoricaltranslation
+  const [createdBy, setCreatedBy] = useState(); //favoriteExpressionEntry.createdBy
+  const [context, setContext] = useState(); //favoriteExpressionEntry.context
 
   const navigate = useNavigate();
 

@@ -15,16 +15,12 @@ function QuickEditExp(props) {
   const { expressionList, urlEndPoint, setShouldRefresh, expressionEntry } =
     props;
 
-  const [theme, setTheme] = useState(expressionEntry.theme);
-  const [expression, setExpression] = useState(expressionEntry.expression);
-  const [literaltranslation, setLiteralTranslation] = useState(
-    expressionEntry.literaltranslation
-  );
-  const [metaphoricaltranslation, setMetaphoricalTranslation] = useState(
-    expressionEntry.metaphoricaltranslation
-  );
-  const [createdBy, setCreatedBy] = useState(expressionEntry.createdBy);
-  const [context, setContext] = useState(expressionEntry.context);
+  const [theme, setTheme] = useState(); //expressionEntry.theme
+  const [expression, setExpression] = useState(); //expressionEntry.expression
+  const [literaltranslation, setLiteralTranslation] = useState();  //expressionEntry.literaltranslation
+  const [metaphoricaltranslation, setMetaphoricalTranslation] = useState();  //expressionEntry.metaphoricaltranslation
+  const [createdBy, setCreatedBy] = useState(); //expressionEntry.createdBy
+  const [context, setContext] = useState(); //expressionEntry.context
 
   const navigate = useNavigate();
 

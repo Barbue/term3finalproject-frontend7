@@ -15,16 +15,12 @@ function QuickEditFavoriteWords(props) {
   const { favoriteWordList, urlEndPoint, setShouldRefresh, favoriteWordEntry } =
     props;
 
-  const [word, setWord] = useState(favoriteWordEntry.word);
-  const [partOfSpeech, setPartOfSpeech] = useState(
-    favoriteWordEntry.partOfSpeech
-  );
-  const [translation, setTranslation] = useState(favoriteWordEntry.translation);
-  const [exampleSentence, setExampleSentence] = useState(
-    favoriteWordEntry.exampleSentence
-  );
-  const [createdBy, setCreatedBy] = useState(favoriteWordEntry.createdBy);
-  const [comments, setComments] = useState(favoriteWordEntry.comments);
+  const [word, setWord] = useState(); //favoriteWordEntry.word
+  const [partOfSpeech, setPartOfSpeech] = useState(); // favoriteWordEntry.partOfSpeech
+  const [translation, setTranslation] = useState(); //favoriteWordEntry.translation
+  const [exampleSentence, setExampleSentence] = useState(); //favoriteWordEntry.exampleSentence
+  const [createdBy, setCreatedBy] = useState(); //favoriteWordEntry.createdBy
+  const [comments, setComments] = useState(); //favoriteWordEntry.comments
 
   const navigate = useNavigate();
 
