@@ -290,8 +290,7 @@ h1{
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-left: 130px !important;
-      margin-right: 130px !important;
+      width: 15rem;
 
 
     }
