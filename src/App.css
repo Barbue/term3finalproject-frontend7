@@ -282,7 +282,7 @@ h1{
 
     }
       .cardbuttons{
-        width: 80%;
+        width: 80% !important;
       }
     
       
