@@ -22,7 +22,7 @@ const NavBar2 = () => {
   };
 
   return (
-    <Navbar>
+    <Navbar className="navBar1">
       {/* <Container>   */}
       {/* <Navbar.Brand className="navbarBrand"><GiTrefoilLily/><GiTrefoilLily/><GiTrefoilLily/></Navbar.Brand> */}
       <Nav>

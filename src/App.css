@@ -240,8 +240,8 @@ h1{
   
   @media (max-width: 428px) {
 
-    .navLink1{ 
-      font-size: 50%;
+    .navBar1{ 
+      font-size: smaller;
 
     }
 
