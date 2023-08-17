@@ -240,8 +240,9 @@ h1{
   
   @media (max-width: 428px) {
 
-    .navLink1{ 
-      font-size: x-small;
+    .navBar1{ 
+      
+    block-size: 25% !important;
 
     }
 
