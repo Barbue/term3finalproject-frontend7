@@ -207,9 +207,9 @@ const WordCard = (props) => {
                       <p>{wordEntry.lastModified}</p>{" "}
                     </small>
                   </Card.Footer>
-
-                  <div className="d-grid gap-2">
-                    <Button
+                  {/* className="d-grid gap-2" */}
+                  <div>  
+                    <Button className="cardbuttons"
                       variant="danger"
                       onClick={() => {
                         handleDeleteWord(wordEntry.createdById);
@@ -218,7 +218,7 @@ const WordCard = (props) => {
                       Delete Word
                     </Button>
 
-                    <Button
+                    <Button className="cardbuttons"
                       variant="primary"
                       onClick={() => {
                         handleFavoriteWord(wordEntry.createdById);
