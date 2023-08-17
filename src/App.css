@@ -283,6 +283,12 @@ h1{
     }
 
     .wordCard{
+      text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
     
      width: 20%;
