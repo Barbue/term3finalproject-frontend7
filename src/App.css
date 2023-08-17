@@ -281,15 +281,10 @@ h1{
       margin-top: 4px;
 
     }
-
-    .wordCard{
+      .cardbuttons{
+        size: 80%;
+      }
     
-    
-     width: 10rem;
-      
-
-
-    }
       
      
      } 
