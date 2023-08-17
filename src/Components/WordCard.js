@@ -207,8 +207,8 @@ const WordCard = (props) => {
                       <p>{wordEntry.lastModified}</p>{" "}
                     </small>
                   </Card.Footer>
-                  {/* className="d-grid gap-2" */}
-                  <div>  
+                  
+                  <div className="d-grid gap-2">  
                     <Button className="cardbuttons"
                       variant="danger"
                       onClick={() => {
