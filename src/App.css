@@ -245,6 +245,9 @@ h1{
 
     display: flex !important;
     flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    
     
 
     
