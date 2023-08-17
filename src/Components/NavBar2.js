@@ -25,7 +25,7 @@ const NavBar2 = () => {
     <Navbar className="navBar1">
       {/* <Container>   */}
       {/* <Navbar.Brand className="navbarBrand"><GiTrefoilLily/><GiTrefoilLily/><GiTrefoilLily/></Navbar.Brand> */}
-      <Nav>
+      <Nav class="navbar navbar-expand-sm bg-light justify-content-center">
         <Nav.Link className="navLink1" href="/">
           <FcHome />
           Home
