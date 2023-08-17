@@ -282,7 +282,8 @@ h1{
 
     }
       .wordCard{
-       max-width: 5rem;
+       max-width: 10rem;
+       margin-left: 5px;
      
       }
     
