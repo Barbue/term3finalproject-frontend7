@@ -244,9 +244,7 @@ h1{
    .nav1{
 
     display: flex !important;
-      flex-direction:center !important;
-      align-items: center !important;
-      justify-content: center !important;
+    flex-direction: column !important;
     
 
     
