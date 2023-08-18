@@ -288,16 +288,16 @@ h1{
     }
 
   .toggle1{
-    text-align: left;
+    text-align: left !important;
    
   } 
   .toggle2{
-    text-align: center;
+    text-align: center !important;
    
   } 
 
   .toggle3{
-    text-align:right;
+    text-align:right !important;
    
   } 
       
