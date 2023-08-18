@@ -282,7 +282,11 @@ h1{
 
     }
       .wordCard{
-       max-width: 12rem;
+        display: flex;
+        flex-direction:center;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10%;
        
      
       }
