@@ -287,10 +287,14 @@ h1{
       
     }
 
-    /* .toggle{
+  .toggle{
+
+    display: inline;
+    flex-direction: row;
+
      
       
-    } */
+    } 
       
      
      } 
