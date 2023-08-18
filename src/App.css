@@ -287,13 +287,10 @@ h1{
       
     }
 
-    .toggle{
-      display: flex !important;
-      flex-direction: row !important;
-      /* align-items: center !important;
-      justify-content: center !important;  */
-      font-size: small !important;
-    }
+    /* .toggle{
+     
+      
+    } */
       
      
      } 
