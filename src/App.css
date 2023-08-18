@@ -288,7 +288,11 @@ h1{
     }
 
     .toggle{
-      font-size: xx-small !important;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      font-size: small;
     }
       
      
