@@ -287,14 +287,19 @@ h1{
       
     }
 
-  .toggle{
+  .toggle1{
+    text-align: left;
+   
+  } 
+  .toggle2{
+    text-align: center;
+   
+  } 
 
-    display: inline;
-    flex-direction: row;
-
-     
-      
-    } 
+  .toggle3{
+    text-align:right;
+   
+  } 
       
      
      } 
