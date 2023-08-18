@@ -282,7 +282,8 @@ h1{
 
     }
     .wordCard{
-      font-size: smaller;
+      padding-left: -5%;
+      padding-right: -5%;
       
     }
       
