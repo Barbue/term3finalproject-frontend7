@@ -286,8 +286,8 @@ h1{
         flex-direction:center;
         align-items: center;
         justify-content: center; */
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: -5%;
+        padding-right: -5%;
        
      
       }
